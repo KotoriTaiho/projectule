@@ -1,0 +1,37 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5027",
+      "name": "手机",
+      "font_class": "shouji",
+      "unicode": "3448",
+      "unicode_decimal": 13384
+    },
+    {
+      "icon_id": "7568878",
+      "name": "24gf-phoneLoudspeaker",
+      "font_class": "24gf-phoneLoudspeaker",
+      "unicode": "e969",
+      "unicode_decimal": 59753
+    },
+    {
+      "icon_id": "15053945",
+      "name": "放大镜",
+      "font_class": "ic_search24px",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "18170148",
+      "name": "首页,屋子,主页,房子",
+      "font_class": "home-full",
+      "unicode": "e973",
+      "unicode_decimal": 59763
+    }
+  ]
+}
