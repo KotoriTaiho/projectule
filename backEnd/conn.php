@@ -6,7 +6,7 @@ header('Access-Control-Allow-Method:POST,GET');  //设置跨域请求的方式�
 define('HOST','localhost');//主机名localhost/127.0.0.1
 define('USERNAME','root');//数据库的用户名
 define('PASSWORD','root');//数据库的密码
-define('DBNAME','JS2110');//数据库名称
+define('DBNAME','js2110');//数据库名称
 
 $conn = @new mysqli(HOST,USERNAME,PASSWORD,DBNAME);//$conn:对象  mysqli:连接数据库的类
 //@符号：容错符号，错误信息不显示，慎用。

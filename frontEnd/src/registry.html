@@ -44,6 +44,16 @@
     <div class="search typepage">
         <img src="./imgs/logo.png" alt="" style="margin-top: 12px;">
       </div>
+      <fieldset style="width:1160px;margin:10px auto;">
+        <legend>用户注册</legend>
+        <form action="http://localhost/projectule/backend/registry.php" method="post" class="registry_form">
+            <p><label for="">手机号码：</label><input type="text" name="tel" class="tel"><span class="checkspan"></span></p>
+            <p><label for="">验证码：</label><input type="text" name="comfrimcode" class="comfrimcode"><span class="checkspan"></span></p>
+            <p><label for="">用户密码：</label><input type="password" name="password" class="password"><span class="checkspan"></span></p>
+            <p><label for="">确认密码：</label><input type="password" name="repass" class="repass"><span class="checkspan"></span></p>
+            <p><input type="submit" value="用户注册" name="submit" class="submit"></p>
+        </form>
+    </fieldset>
     <div class="footer">
       <div class="typepage">
           <div class="foot-banner"><img src="./imgs/footer.png" alt="" style="border-top: 1px solid #999;border-bottom: 1px solid #999";></div>
@@ -52,3 +62,5 @@
   </div>
 </body>
 </html>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+<script src="js/registry.js"></script>
