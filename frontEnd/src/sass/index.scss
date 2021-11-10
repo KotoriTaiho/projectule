@@ -24,7 +24,7 @@
     background-color: #d12e14;
     height: 470px;
 }
-.banner div{
+.banner .typepage{
     position: relative;
     height: 470px;
 }
@@ -39,6 +39,15 @@
     flex-wrap: wrap; */
 
 }
+.listbox{
+    width: 1010px;
+    height: 470px;
+    position: absolute;
+    background-color: white;
+    left: 190px;
+    top: 0;
+    z-index: -1;
+}
 .banner ul li{
     width: 190px;
     background-color: white;
@@ -48,8 +57,13 @@
     padding-left: 30px;
     box-sizing: border-box;
 }
+#li:hover .listbox{
+    z-index: 1;
+}
 .col-main{
     height: 338px;
+    overflow: hidden;
+    position: relative;
 }
 .col-main>div>li{
     line-height: 53px;
@@ -59,14 +73,54 @@
 }
 .upbox{
     height: 285px;
-}
-.upbox li{
-    height: 285px;
-    width: 240px;
-    float: left;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;
-    
-}
+    ul{
+        li{
+            height: 285px;
+            width: 240px;
+            float: left;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-around;
+            align-self: center;
+            justify-content: center;
+            p{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            
+        }
+    }
 
+}
+.show1{
+    height: 592px;
+    ul{
+        height: 42px;
+        line-height: 42px;
+        li{
+            float: left;
+        }
+    }
+    div{
+        height: 550px;
+        display: flex;
+        align-content: space-around;
+        li{
+            height: 285px;
+            width: 240px;
+            float: left;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-around;
+            align-self: center;
+            justify-content: center;
+            p{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            
+        }
+    }
+}

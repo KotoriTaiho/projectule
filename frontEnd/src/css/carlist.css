@@ -1,0 +1,70 @@
+.carlistbox {
+  border-top: 4px solid red;
+  height: 500px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.iteminfo {
+  height: 40px;
+  background-color: lightgray;
+  margin-top: 80px;
+}
+
+.iteminfo li {
+  float: left;
+  line-height: 40px;
+}
+
+#check {
+  width: 40px;
+  text-align: center;
+}
+
+#item-name {
+  width: 760px;
+}
+
+#item-price {
+  width: 140px;
+}
+
+#item-count {
+  width: 100px;
+}
+
+#item-total {
+  width: 100px;
+}
+
+#item-action {
+  width: 60px;
+}
+
+.item li {
+  padding: 15px;
+  height: 100px;
+  position: relative;
+}
+.item li input {
+  position: absolute;
+  top: 20px;
+}
+.item li img {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+}
+.item li p {
+  position: absolute;
+  top: 20px;
+  left: 130px;
+  color: #999;
+}
+.item li .price {
+  position: absolute;
+  top: 30px;
+  left: 780px;
+}
+
+/*# sourceMappingURL=carlist.css.map */

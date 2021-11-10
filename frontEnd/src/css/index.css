@@ -30,7 +30,7 @@
   height: 470px;
 }
 
-.banner div {
+.banner .typepage {
   position: relative;
   height: 470px;
 }
@@ -46,6 +46,16 @@
       flex-wrap: wrap; */
 }
 
+.listbox {
+  width: 1010px;
+  height: 470px;
+  position: absolute;
+  background-color: white;
+  left: 190px;
+  top: 0;
+  z-index: -1;
+}
+
 .banner ul li {
   width: 190px;
   background-color: white;
@@ -56,8 +66,14 @@
   box-sizing: border-box;
 }
 
+#li:hover .listbox {
+  z-index: 1;
+}
+
 .col-main {
   height: 338px;
+  overflow: hidden;
+  position: relative;
 }
 
 .col-main > div > li {
@@ -70,14 +86,51 @@
 .upbox {
   height: 285px;
 }
-
-.upbox li {
+.upbox ul li {
   height: 285px;
   width: 240px;
   float: left;
   display: flex;
   flex-wrap: wrap;
   align-content: space-around;
+  align-self: center;
+  justify-content: center;
+}
+.upbox ul li p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.show1 {
+  height: 592px;
+}
+.show1 ul {
+  height: 42px;
+  line-height: 42px;
+}
+.show1 ul li {
+  float: left;
+}
+.show1 div {
+  height: 550px;
+  display: flex;
+  align-content: space-around;
+}
+.show1 div li {
+  height: 285px;
+  width: 240px;
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  align-self: center;
+  justify-content: center;
+}
+.show1 div li p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /*# sourceMappingURL=index.css.map */
