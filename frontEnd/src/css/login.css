@@ -1,0 +1,32 @@
+.loginbox {
+  height: 495px;
+  position: relative;
+}
+
+.login {
+  width: 300px;
+  height: 400px;
+  position: absolute;
+  top: 50px;
+  left: 800px;
+  background-color: white;
+}
+
+.loginname {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+input {
+  height: 40px;
+  width: 200px;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+span {
+  margin-left: 40px;
+}
+
+/*# sourceMappingURL=login.css.map */

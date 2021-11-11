@@ -22,5 +22,5 @@ if(isset($_POST['submit'])){//前端点击了用户注册按钮，这里才开�
     //第一项null，表示sid是自动递增，无符号(数据库表里面进行设置)
 
     //跳转登录页面,前端和后端通信采用绝对路径(完整的路径),其他都采用相对路径
-    header('location:http://localhost/projectule/frontEnd/src/registry.html');
+    header('location:http://localhost/projectule/frontEnd/src/login.html');
 }

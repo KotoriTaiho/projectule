@@ -7,6 +7,7 @@
     <title>用户登录-邮乐</title>
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/login.css">
     <script src="./css/font/iconfont.js"></script>
     <style>
         .icon {
@@ -26,8 +27,8 @@
               </svg>邮乐首页</a>
               <ul class="list">
                   <li>您好，欢迎来到邮乐网！</li>
-                  <li><a href="">[请登录]</a></li>
-                  <li><a href="">[免费注册]</a></li>
+                  <li><a href="./login.html">[请登录]</a></li>
+                  <li><a href="./registry.html">[免费注册]</a></li>
                   <li>我的邮乐</li>
                   <li>手机邮乐</li>
                   <li>全部商品分类</li>
@@ -43,8 +44,20 @@
     <div class="search typepage">
       <img src="./imgs/logo.png" alt="" style="margin-top: 12px;">
     </div>
-    <div>
-      
+    <div class="loginbox typepage">
+      <img src="https://pic0.ulecdn.com/item/user_0102/desc20210303/c6d4d578372af24e_-1x-1.jpg" alt="">
+      <fieldset class="login">
+        <div class="loginname">登录</div>
+        <form action="http://localhost/projectule/backend/login.php" method="post">
+            <p>
+                <input type="text" class="tel" placeholder="请输入您的手机号" style="margin-top: 50px;"><br>
+                <span class="checkspan" ></span>
+            </p>
+            <p>
+                <input type="password" class="password" placeholder="请输入您的密码"><br>
+                <span class="checkspan"></span>
+            </p>
+            <p><input type="button" value="立即登录" class="btn"></p>
     </div>
     <div class="footer">
       <div class="typepage">
@@ -54,3 +67,5 @@
   </div>
 </body>
 </html>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+<script src="js/login.js"></script>
