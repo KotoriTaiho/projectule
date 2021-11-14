@@ -20,46 +20,49 @@
     color: white;
     padding: 0 10px 0 10px;
 }
-.banner{
+/* .bannerbackground{
     background-color: #d12e14;
     height: 470px;
-}
-.banner .typepage{
     position: relative;
+} */
+/* .banner{
     height: 470px;
-}
-.banner ul{
+} */
+/* .bannerbackground ul{
     width: 190px;
     height: 470px;
     position: absolute;
     top: 0;
-    left: 0;
-/*     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; */
-
+    left: 26.5%;
+    z-index: 999;
 }
-.listbox{
+
+#listbox{
     width: 1010px;
     height: 470px;
-    position: absolute;
     background-color: white;
+    position: absolute;
+    top: 0px;
     left: 190px;
-    top: 0;
-    z-index: -1;
+    opacity: 0;
 }
-.banner ul li{
+.bannerbackground ul li{
     width: 190px;
     background-color: white;
     opacity: 0.8;
     line-height: 36px;
 /*     display: flex; */
-    padding-left: 30px;
+/*     padding-left: 30px;
     box-sizing: border-box;
-}
-#li:hover .listbox{
-    z-index: 1;
-}
+} */
+/* .bannerbackground img{
+    position: absolute;
+    left: 26.5%;
+    top: 0;
+} */
+/* #lihover:hover #listbox{
+    opacity: 1;
+}  */
 .col-main{
     height: 338px;
     overflow: hidden;
@@ -123,4 +126,53 @@
             
         }
     }
+}
+#loutinav {
+    width: 35px;
+    position: fixed;
+    bottom: 100px;
+    left: 200px;
+    border: 1px solid #ddd;
+    display: none;
+}
+
+#loutinav ul li {
+    width: 35px;
+    height: 32px;
+    border-bottom: 1px dotted #DDDDDD;
+    list-style: none;
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    padding: 10px 0;
+    background: #918888;
+    color: #fff;
+}
+
+#loutinav ul li span {
+    width: 35px;
+    height: 32px;
+    padding: 10px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#loutinav ul li.last {
+    background: #5e4a4a;
+    color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+#loutinav ul li.active span {
+    background: #c00;
+    color: #fff;
+    display: block;
+}
+
+#loutinav ul li:hover span {
+    background: #c00;
+    color: #fff;
+    display: block;
 }

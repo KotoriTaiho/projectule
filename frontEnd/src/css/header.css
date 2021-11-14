@@ -12,14 +12,14 @@ a {
   font-size: 14px;
 }
 
-.list {
+.headerlist {
   float: right;
   line-height: 40px;
   font-size: 14px;
   color: #666666;
 }
 
-.list a {
+.headerlist a {
   color: #0066cc;
 }
 

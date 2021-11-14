@@ -28,13 +28,13 @@
             <a href="./index1.html"><svg class="icon" aria-hidden="true" style="color: #d63434;">
                 <use xlink:href="#icon-home-full"></use>
               </svg>邮乐首页</a>
-              <ul class="list">
+              <ul class="headerlist">
                   <li>您好，欢迎来到邮乐网！</li>
-                  <li><a href="./login.html">[请登录]</a></li>
+                  <li id="logininfo"></li>
                   <li><a href="./registry.html">[免费注册]</a></li>
                   <li>我的邮乐</li>
                   <li>手机邮乐</li>
-                  
+
                   <li>全部商品分类</li>
                   <li>网站地图</li>
                   <li>帮助中心</li>
@@ -64,28 +64,40 @@
             </ul>
         </div>
     </div>
-    <div class="banner">
-        <div class="typepage">
-            <ul>
-                <li id="li">特色美食</li>
-                <li>美妆洗护</li>
-                <li>家具生活</li>
-                <li>厨卫清洁</li>
-                <li>家用电器</li>
-                <li>母婴玩具</li>
-                <li>箱包、配饰</li>
-                <li>手机数码</li>
-                <li>男装女装鞋靴</li>
-                <li>运动户外</li>
-                <li>电脑办公</li>
-                <li>汽车、图书、影像</li>
-                <li>邮票、旅行、缴费</li>
-            </ul>
-            <img src="./imgs/banner.jpg" alt="">
-            <div class="listbox"></div>
+    
+<!--     <div class="bannerbackground">
+        <ul>
+            <li id="lihover">特色美食</li>
+            <li>美妆洗护</li>
+            <li>家具生活</li>
+            <li>厨卫清洁</li>
+            <li>家用电器</li>
+            <li>母婴玩具</li>
+            <li>箱包、配饰</li>
+            <li>手机数码</li>
+            <li>男装女装鞋靴</li>
+            <li>运动户外</li>
+            <li>电脑办公</li>
+            <li>汽车、图书、影像</li>
+            <li>邮票、旅行、缴费</li>
+        </ul>
+            <div id="listbox"></div>
+            <img src="https://pic2.ulecdn.com/item/user_0102/desc20211104/d4ec591dd09d2911_-1x-1.jpg" alt="">
+            <img src="https://pic0.ulecdn.com/item/user_0102/desc20211109/8b547d59d7572bf1_-1x-1.jpg" alt=""> 
+            
         </div>
-    </div>
+    </div>-->
     <!-- main -->
+    <div id="loutinav">
+        <ul>
+            <li class="active"><span>舌尖美食</span> </li>
+            <li><span>家居必备</span> </li>
+            <li><span>智能生活</span> </li>
+            <li><span>时尚人生</span> </li>
+            <li><span>美妆洗护</span> </li>
+            <li class="last">顶部</li>
+        </ul>
+    </div>
     <div class="col-main typepage">
         <div style="height: 53px;border-bottom: 1px #999 solid;">
             <li>底价来袭</li>
@@ -210,6 +222,31 @@
             </ul>
         </div>
     </div>
+    <div class="show1 typepage">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+        </ul>
+        <div>
+            <img src="./imgs/mid.jpg" alt="" style="width: 240px;">
+            <ul>
+                <li><img src="./imgs/shop.jpg" alt=""><p>燕之坊 五谷米（大米 红米 藜麦米 苦荞 青稞 红扁豆等）400g</p><span>￥12.00</span></li>
+                <li><img src="./imgs/shop.jpg" alt=""><p>燕之坊 五谷米（大米 红米 藜麦米 苦荞 青稞 红扁豆等）400g</p><span>￥12.00</span></li>
+                <li><img src="./imgs/shop.jpg" alt=""><p>燕之坊 五谷米（大米 红米 藜麦米 苦荞 青稞 红扁豆等）400g</p><span>￥12.00</span></li>
+                <li><img src="./imgs/shop.jpg" alt=""><p>燕之坊 五谷米（大米 红米 藜麦米 苦荞 青稞 红扁豆等）400g</p><span>￥12.00</span></li>
+                <li><img src="./imgs/shop.jpg" alt=""><p>燕之坊 五谷米（大米 红米 藜麦米 苦荞 青稞 红扁豆等）400g</p><span>￥12.00</span></li>
+                <li><img src="./imgs/shop.jpg" alt=""><p>燕之坊 五谷米（大米 红米 藜麦米 苦荞 青稞 红扁豆等）400g</p><span>￥12.00</span></li>
+                <li><img src="./imgs/shop.jpg" alt=""><p>燕之坊 五谷米（大米 红米 藜麦米 苦荞 青稞 红扁豆等）400g</p><span>￥12.00</span></li>
+                <li><img src="./imgs/shop.jpg" alt=""><p>燕之坊 五谷米（大米 红米 藜麦米 苦荞 青稞 红扁豆等）400g</p><span>￥12.00</span></li>
+            </ul>
+        </div>
+    </div>
     <!-- footer -->
     <div class="footer">
         <div class="typepage">
@@ -219,3 +256,6 @@
     </div>
 </body>
 </html>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+<script src="./js/logininfo.js"></script>
+<script src="./js/stairs.js"></script>
