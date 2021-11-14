@@ -20,49 +20,103 @@
     color: white;
     padding: 0 10px 0 10px;
 }
-/* .bannerbackground{
+.banner{
     background-color: #d12e14;
     height: 470px;
+}
+.banner div{
     position: relative;
-} */
-/* .banner{
-    height: 470px;
-} */
-/* .bannerbackground ul{
+}
+.listclass{
     width: 190px;
     height: 470px;
     position: absolute;
     top: 0;
-    left: 26.5%;
+    left: 0;
     z-index: 999;
 }
-
-#listbox{
-    width: 1010px;
-    height: 470px;
-    background-color: white;
-    position: absolute;
-    top: 0px;
-    left: 190px;
-    opacity: 0;
-}
-.bannerbackground ul li{
+.listclass li{
     width: 190px;
     background-color: white;
     opacity: 0.8;
     line-height: 36px;
-/*     display: flex; */
-/*     padding-left: 30px;
     box-sizing: border-box;
-} */
-/* .bannerbackground img{
+}
+#listbox{
+    width: 1010px;
+    height: 470px;
+    background-color: green;
     position: absolute;
-    left: 26.5%;
-    top: 0;
-} */
-/* #lihover:hover #listbox{
+    left: 190px;
+    top: 0px;
+    visibility: hidden;
+}
+#listbox a{
+    text-decoration: none;
+    color: red;
+}
+#lihover:hover #listbox{
+    visibility: visible;
+}
+.lunbo {
+    width: 1010px;
+    height: 470px;
+    position: relative;
+    cursor: pointer;
+}
+
+.lunbo ul li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+}
+
+.lunbo ul li.show {
     opacity: 1;
-}  */
+}
+
+.lunbo ol {
+    position: absolute;
+    left: 80%;
+    bottom: 20px;
+    text-indent: -999em;
+    width: 125px;
+    margin-left: -60px;
+}
+
+.lunbo ol li {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ccc;
+    float: left;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.lunbo ol li.active {
+    background-color: yellow;
+}
+
+.left_arrow,
+.right_arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -60px;
+    font-size: 100px;
+    color: #fff;
+    text-decoration: none;
+    display: none;
+}
+
+.left_arrow {
+    left: 20px;
+}
+
+.right_arrow {
+    right: 20px;
+}
 .col-main{
     height: 338px;
     overflow: hidden;
