@@ -9,34 +9,27 @@
 
     //1.当前的圆圈列表添加类名。其他的圆圈列表移出类名。
     btnList.on('mouseover', function() {
-        num = $(this).index(); //当前的索引
-        // btnList.eq(num).addClass('active').siblings('li').removeClass('active');
-        // picList.eq(num).animate({ opacity: 1 }, 200).siblings('li').animate({ opacity: 0 }, 200);
+        num = $(this).index(); 
         tabSwitch();
 
     });
-
-    //2.banner添加hover事件
     lunbo.hover(function() {
         left.show();
         right.show();
-        clearInterval(timer); //鼠标移入关闭定时器
+        clearInterval(timer); 
     }, function() {
         left.hide();
         right.hide();
-        timer = setInterval(() => { //鼠标移出开启定时器
+        timer = setInterval(() => { 
             right.click();
         }, 3000);
     });
 
-    //3.左右箭头事件。
     right.on('click', function() {
         num++;
-        if (num > btnList.length - 1) { //到了最后一张，重新从0开始
+        if (num > btnList.length - 1) { 
             num = 0;
         }
-        // btnList.eq(num).addClass('active').siblings('li').removeClass('active');
-        // picList.eq(num).animate({ opacity: 1 }, 200).siblings('li').animate({ opacity: 0 }, 200);
         tabSwitch();
     });
 
@@ -45,19 +38,15 @@
         if (num < 0) {
             num = btnList.length - 1;
         }
-        // btnList.eq(num).addClass('active').siblings('li').removeClass('active');
-        // picList.eq(num).animate({ opacity: 1 }, 200).siblings('li').animate({ opacity: 0 }, 200);
         tabSwitch();
     });
 
 
-    // 4.封装切换过程，每一个事件下面都有
     function tabSwitch() {
         btnList.eq(num).addClass('active').siblings('li').removeClass('active');
         picList.eq(num).animate({ opacity: 1 }, 200).siblings('li').animate({ opacity: 0 }, 200);
     }
 
-    // 5.自动轮播：每隔3s，主动触发右键事件，事件也叫做被动的方法。
     timer = setInterval(() => {
         right.click();
     }, 3000);

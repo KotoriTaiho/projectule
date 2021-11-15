@@ -24,8 +24,6 @@
         // 2.添加懒加载
         $('img.lazy').lazyload({ effect: 'fadeIn' });
 
-        // 3.添加分页 - https://www.jq22.com/yanshi5697/
-        // 引入js和css，熟悉配置
         $('.page').pagination({ //引入分页插件的方法
             pageCount: resData.pagesize, //分页的数量(接口)
             jump: true, //是否存在跳转按钮

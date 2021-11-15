@@ -1,7 +1,6 @@
 <?php
 // 引入数据库连接的文件
 include "conn.php";
-
 // 获取sid，查询sid对应的数据
 // isset():检测括号里面的值是否存在，返回布尔值
 if(isset($_GET['sid'])){//前端传入的sid是否存在

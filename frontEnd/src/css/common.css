@@ -14,11 +14,13 @@ li {
 
 .headerlist li {
   float: left;
+  margin-left: 10px;
 }
 
 .footer {
   height: 523px;
   padding: 20px 0px;
+  margin-top: 30px;
 }
 
 /* foot-banner */

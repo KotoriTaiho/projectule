@@ -111,11 +111,11 @@
 }
 
 .left_arrow {
-    left: 20px;
+    left: 200px;
 }
 
 .right_arrow {
-    right: 20px;
+    right: -180px;
 }
 .col-main{
     height: 338px;
@@ -182,7 +182,7 @@
     }
 }
 #loutinav {
-    width: 35px;
+    width: 30px;
     position: fixed;
     bottom: 100px;
     left: 200px;
@@ -191,22 +191,21 @@
 }
 
 #loutinav ul li {
-    width: 35px;
-    height: 32px;
-    border-bottom: 1px dotted #DDDDDD;
+    width: 30px;
+    height: 30px;
     list-style: none;
     font-size: 12px;
     text-align: center;
     position: relative;
     cursor: pointer;
     padding: 10px 0;
-    background: #918888;
-    color: #fff;
+    background: white;
+    color: #999;
 }
 
 #loutinav ul li span {
-    width: 35px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
     padding: 10px 0;
     position: absolute;
     top: 0;
@@ -214,19 +213,63 @@
 }
 
 #loutinav ul li.last {
-    background: #5e4a4a;
+    background: red;
     color: #fff;
     border-bottom: 1px solid #ddd;
 }
 
-#loutinav ul li.active span {
-    background: #c00;
+#loutinav ul li:nth-child(1).active span {
+    background: orange;
     color: #fff;
     display: block;
 }
 
-#loutinav ul li:hover span {
-    background: #c00;
+#loutinav ul li:nth-child(1):hover span {
+    background: orange;
+    color: #fff;
+    display: block;
+}
+#loutinav ul li:nth-child(2).active span {
+    background: green;
+    color: #fff;
+    display: block;
+}
+
+#loutinav ul li:nth-child(2):hover span {
+    background: green;
+    color: #fff;
+    display: block;
+}
+#loutinav ul li:nth-child(3).active span {
+    background: blue;
+    color: #fff;
+    display: block;
+}
+
+#loutinav ul li:nth-child(3):hover span {
+    background: blue;
+    color: #fff;
+    display: block;
+}
+#loutinav ul li:nth-child(4).active span {
+    background: black;
+    color: #fff;
+    display: block;
+}
+
+#loutinav ul li:nth-child(4):hover span {
+    background: black;
+    color: #fff;
+    display: block;
+}
+#loutinav ul li:nth-child(5).active span {
+    background: purple;
+    color: #fff;
+    display: block;
+}
+
+#loutinav ul li:nth-child(5):hover span {
+    background: purple;
     color: #fff;
     display: block;
 }

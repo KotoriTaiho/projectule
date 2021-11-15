@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>商品列表</title>
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/list.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <title>商品详情</title>
+    <link rel="stylesheet" href="./css/detial.css">
     <script src="./css/font/iconfont.js"></script>
     <style>
         .icon {
@@ -22,7 +19,7 @@
 </head>
 <body>
     <!-- head -->
-    <div class="header">
+<!--    <div class="header">
         <div class="typepage">
             <a href="./index1.html"><svg class="icon" aria-hidden="true" style="color: #d63434;">
                 <use xlink:href="#icon-home-full"></use>
@@ -47,34 +44,49 @@
     <div class="search typepage">
       <img src="./imgs/logo.png" alt="" style="margin-top: 12px;">
     </div>
-    <!-- 列表页的排序 -->
-    <div class="sort">
-        <button>默认排序</button>
-        <button>价格升序</button>
-        <button>价格降序</button>
+</div> -->
+<div class="goodsinfo">
+    <div class="box">
+        <a href="cartlist.html" target="_blank">进入购物车</a>
     </div>
-    <!-- 列表页的渲染 -->
-    <div class="list">
-        <ul>
-
-        </ul>
-    </div>
-    <!-- 加载第三方分页的结构 ：page-->
-    <div class="pagelist">
-        <div class="m-style page">
+    <div class="wrap">
+        <div id="spic">
+            <img src="" alt="" id="smallpic">
+            <div id="sf"></div>
+        </div>
+        <div id="bf">
+            <img src="" alt="" id="bpic">
+        </div>
+        <div id="ulist">
+            <a href="javascript:;" id="left">&lt;</a>
+            <div id="list">
+                <ul>
+                    <!-- 这里是小图的位置，渲染 -->
+                </ul>
+            </div>
+            <a href="javascript:;" id="right">&gt;</a>
         </div>
     </div>
-    <div class="footer">
+    <div class="goodsinfo-word">
+        <div class="p-name">
+            <a class="loadtitle" href="##"></a>
+        </div>
+        <div class="p-price"><strong><em>￥</em><i class="loadpcp"></i></strong></div>
+        <div class="p-btn">
+            <input type="text" id="count" value="1" />
+            <a href="javascript:;">加入购物车</a>
+            <!-- void(0) -->
+        </div>
+    </div>
+</div>
+    <!-- <div class="footer">
         <div class="typepage">
             <div class="foot-banner"><img src="./imgs/footer.png" alt="" style="border-top: 1px solid #999;border-bottom: 1px solid #999";></div>
             <div class="help-list"><img src="./imgs/list.png" alt=""></div>
         </div>
     </div>
-</body>
+</body> -->
 </html>
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
-<script src="./js/jquery.pagination.js"></script>
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
-<script src="./js/list.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.js"></script>
 <script src="./js/logininfo.js"></script>
-
+<script src="./js/detail.js"></script>

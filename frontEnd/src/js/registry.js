@@ -171,7 +171,7 @@
         }
         //最终的验证通过页面进行跳转。
         if (telflag && comfrimcodeflag && passflag && repassflag) {
-            submit.prop('disabled', false); //启用
+            submit.css('background','red').prop('disabled', false); //启用
         } else {
             submit.prop('disabled', true); //禁用
         }

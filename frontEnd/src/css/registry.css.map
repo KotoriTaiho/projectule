@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,SAAS;EACL,MAAM,EAAE,KAAK;EACb,UAAU,EAAE,OAAkB;EAC9B,MAAM,EAAE,CAAC;;;AAEb,YAAY;EACR,MAAM,EAAE,MAAM;EACd,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,SAAS,EAAE,IAAI;;;AAEnB,KAAK;EACD,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,KAAK;EACZ,WAAW,EAAE,IAAI;EACjB,UAAU,EAAE,IAAI;;;AAEpB,IAAI;EACA,WAAW,EAAE,IAAI",
+"sources": ["../sass/registry.scss"],
 "names": [],
 "file": "registry.css"
 }

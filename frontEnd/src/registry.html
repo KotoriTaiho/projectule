@@ -45,15 +45,17 @@
     <div class="search typepage">
         <img src="./imgs/logo.png" alt="" style="margin-top: 12px;">
       </div>
-      <fieldset style="width:1160px;margin:10px auto;">
-        <legend>用户注册</legend>
+      <fieldset class="registry">
+        <div class="registrybox">
         <form action="http://localhost/projectule/backend/registry.php" method="post" class="registry_form">
+          <h3>注册</h3>
             <p><label for="">手机号码：</label><input type="text" name="tel" class="tel"><span class="checkspan"></span></p>
-            <p><label for="">验证码：</label><input type="text" name="comfrimcode" class="comfrimcode"><span class="checkspan"></span></p>
+            <p><label for="">验证码：&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" name="comfrimcode" class="comfrimcode"><span class="checkspan"></span></p>
             <p><label for="">用户密码：</label><input type="password" name="password" class="password"><span class="checkspan"></span></p>
             <p><label for="">确认密码：</label><input type="password" name="repass" class="repass"><span class="checkspan"></span></p>
             <p><input type="submit" value="用户注册" name="submit" class="submit"></p>
         </form>
+        </div>
     </fieldset>
     <div class="footer">
       <div class="typepage">

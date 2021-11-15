@@ -1,10 +1,9 @@
-$banxin : 1200px;
 *{
     margin: 0;
     padding: 0;
 }
 .typepage{
-    width:$banxin;
+    width:1200px;
     margin: 0 auto;
 }
 li{
@@ -12,11 +11,10 @@ li{
 }
 .headerlist li{
     float: left;
-    margin-left: 10px;
 }
 .footer{
+    margin-top: 30px;
     height: 523px;
     padding: 20px 0px;
-    margin-top: 30px;
 }
 /* foot-banner */

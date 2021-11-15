@@ -10,27 +10,16 @@ a{
     line-height: 40px;
     font-size: 14px;
 }
-.headerlist{
+.list{
     float: right;
     line-height: 40px;
     font-size: 14px;
     color: #666666;
 }
-.headerlist a{
+.list a{
     color: #0066cc;
 }
 .logo{
     background-color: red;
     height: 100%;
-}
-.app{
-    visibility: hidden;
-    height: 80px;
-    width: 80px;
-    position: fixed;
-    top: 40px;
-}
-.liapp:hover .app{
-    visibility: visible;
-   
 }
