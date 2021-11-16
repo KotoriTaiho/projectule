@@ -1,13 +1,12 @@
 ! function($) {
-    const lunbo = $('.lunbo'); //banner盒子
-    const picList = $('.lunbo ul li'); //图片列表
-    const btnList = $('.lunbo ol li'); //圆圈列表
-    const left = $('.left_arrow'); //左箭头
+    const lunbo = $('.lunbo'); 
+    const picList = $('.lunbo ul li'); 
+    const btnList = $('.lunbo ol li'); 
+    const left = $('.left_arrow'); 
     const right = $('.right_arrow');
-    let num = null; //存储当前点击的元素的索引。
+    let num = null;
     let timer = null;
 
-    //1.当前的圆圈列表添加类名。其他的圆圈列表移出类名。
     btnList.on('mouseover', function() {
         num = $(this).index(); 
         tabSwitch();
